@@ -4,7 +4,23 @@
     <TargetFramework>netstandard2.1</TargetFramework>
     <Nullable>enable</Nullable>
     <PackageId>OnlyAti.$(AssemblyName)</PackageId>
-	  <Version>1.0.2</Version>
+	  <Version>1.0.3</Version>
+	  <Authors>molnar.attila28@gmail.com</Authors>
+	  <Description>Deserialiozer for redis info outputs</Description>
+	  <PackageProjectUrl>https://github.com/onlyati/Redis-Property-Parser</PackageProjectUrl>
+	  <PackageReadmeFile>README.md</PackageReadmeFile>
+	  <RepositoryUrl>https://github.com/onlyati/Redis-Property-Parser</RepositoryUrl>
+	  <RepositoryType>github</RepositoryType>
+	  <PackageTags>redis; desirializer</PackageTags>
+	  <PackageReleaseNotes>https://github.com/onlyati/Redis-Property-Parser</PackageReleaseNotes>
+	  <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
