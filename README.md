@@ -8,10 +8,10 @@ Redis has some command which follows the following format:
 
 This package can be used to deserialize the text into and object. To get output of Redis command you can use any supported Redis package.
 
-I use [StackExchange.Redis](https://github.com/StackExchange/StackExchange.Redis) package but I did not find that I could gather settings output into objects by this. So I made my package to make the deserialization.
+I use [StackExchange.Redis](https://github.com/StackExchange/StackExchange.Redis) package but I did not find that I could gather settings output into objects by this from cluster perspective. So I made my package to make the deserialization.
 
 ## Usage example
-Let be assumed that we have the following class:
+Let us be assumed that we have the following class:
 ```csharp
 using OnlyAti;
 
@@ -28,9 +28,9 @@ internal class RedisClusterInfo
 }
 ```
 
-We can use the deserialiazation as in the following example. Example use [StackExchange.Redis](https://github.com/StackExchange/StackExchange.Redis) library for connection and command execution.
+We can use the deserialiazation as in the following example. In the example, I use [StackExchange.Redis](https://github.com/StackExchange/StackExchange.Redis) library for connection and command execution.
 ```csharp
-// Set the endpoints to the Redis instancens
+// Set the endpoints to the Redis instances
 ConfigurationOptions redisOptions = new()
 {
     EndPoints =
