@@ -5,6 +5,13 @@ namespace OnlyAti
 {
     public static class Redis
     {
+        /// <summary>
+        /// Deserlization method
+        /// </summary>
+        /// <typeparam name="TValue">Object type what will be the target deserializtaion object</typeparam>
+        /// <param name="text">Redis command output</param>
+        /// <returns>Deserilized object or null if failed</returns>
+        /// <exception cref="Exception">Converting exception</exception>
         public static TValue PropertyDeserializer<TValue>(string? text) where TValue : new()
         {
             TValue DeserObject = (TValue)Activator.CreateInstance(typeof(TValue));
