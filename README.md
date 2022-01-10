@@ -77,7 +77,7 @@ if (!status.IsNull)
 {
     // If not null, make the deserialization
     Console.WriteLine($"Satus type {status.Type}:\n{status.ToString()}");
-    var ret = Redis.PropertyDeserializer<RedisClusterInfo>(status.ToString());
+    var ret = OnlyAti.Redis.PropertyDeserializer<RedisClusterInfo>(status.ToString());
 
     Console.WriteLine($"Cluster status: {ret.ClusterStatus}");
     Console.WriteLine($"Cluster node count: {ret.ClusterNodeCount}");
