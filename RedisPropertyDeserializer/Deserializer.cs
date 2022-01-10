@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Linq;
 
-namespace RedisPropertyDeserializer
+namespace OnlyAti
 {
-    public static class RedisPropertyDeserializer
+    public static class Redis
     {
-        public static TValue Deserializer<TValue>(string? text) where TValue : new()
+        public static TValue PropertyDeserializer<TValue>(string? text) where TValue : new()
         {
             TValue DeserObject = (TValue)Activator.CreateInstance(typeof(TValue));
 

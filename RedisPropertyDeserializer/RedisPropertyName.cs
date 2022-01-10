@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace RedisPropertyDeserializer
+namespace OnlyAti
 {
     public class RedisPropertyName : Attribute
     {
